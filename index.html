@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/667bf1440f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Aman</span><br> Singh From India</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a highly organized and self-motivated learner in the field of web development. I possess valuable skills
+                     in framing websites and their subsets, thanks to the knowledge acquired through my academic journey. With a 
+                     passion for coding and web technologies, I strive to create efficient and innovative solutions.</p>
+                   
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Feedback Management system</span><br>Designing web/app interfaces</li>
+                        <li><span>Online shopping system</span><br>Web app Development</li>
+                        <li><span>Phonebot system</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>MCA from Lovely Professional University</li>
+                        <li><span>2022</span><br>BCA from Lovely Professional University</li>
+                        <li><span>2019</span><br>Higher-Secondary From Pt.DDUSVM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-connectdevelop fa-beat-fade"></i>
+                <h2>Meta Front-End Developer</h2>
+                <p>"Invested in honing my skills, I've completed the Meta Front-End Developer program on Coursera, mastering the latest 
+                technologies and techniques in web development. Eager to leverage this expertise to create engaging and innovative 
+                digital experiences."</p>
+                <a href="https://coursera.org/share/75ef3713b76a9244eb467eefa4504f7a">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-angular fa-beat-fade"></i>
+                <h2>Front-End JavaScript Frameworks: Angular</h2>
+                <p>"Completed the 'Front-End JavaScript Frameworks: Angular' course on Coursera, gaining in-depth knowledge of Angular's 
+                core features and best practices. Ready to apply this expertise to build dynamic and efficient web applications."</p>
+                <a href="https://coursera.org/share/916d6adc08027259d312fde39260871d">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store fa-beat-fade"></i>
+                <h2>Advanced Styling with Responsive Design</h2>
+                <p>"Successfully completed the 'Advanced Styling with Responsive Design' course on Coursera, mastering techniques for 
+                creating visually appealing and adaptive web designs. Skilled in crafting responsive layouts that ensure optimal user 
+                experiences across all devices."</p>
+                <a href="https://coursera.org/share/03e46c40f7e7468a7cdc2d644428f9b9">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Feedback Managment System</h3>
+                    <p>Developed a comprehensive Feedback Management System that streamlines the collection, analysis, and reporting of 
+                    user feedback. This system enhances customer satisfaction by enabling real-time responses and insightful data-driven 
+                    decisions. Key features include customizable feedback forms, automated report generation, and a user-friendly 
+                    dashboard.</p>
+                    <a href="https://github.com/AmanSingh5/Feedback-Management-System"><i class="fa-solid fa-square-up-right fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Weavers Vastra</h3>
+                    <p>Created a dynamic e-commerce website for a clothing merchant, featuring a user-friendly interface, secure payment 
+                    integration, and responsive design. The platform supports product catalog management, order tracking, and customer
+                    reviews, enhancing the overall shopping experience.</p>
+                    <a href="https://github.com/AmanSingh5/clothe-shop"><i class="fa-solid fa-square-up-right fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>The Phonebot</h3>
+
+                    <p>Engineered a Phonebot system that facilitates remote communication and interaction through real-time audio and 
+                    video streaming. The robot is equipped with autonomous navigation, obstacle detection, and user-friendly controls, 
+                    providing seamless virtual presence for users in remote locations.</p>
+                    <a href="https://github.com/AmanSingh5/Phonebot"><i class="fa-solid fa-square-up-right fa-beat-fade"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane fa-beat-fade"></i> aman.singh.8.11.01@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone fa-beat-fade"></i> 83189859640</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/1amansingh"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
+                    <a href="https://github.com/AmanSingh5"><i class="fa-brands fa-square-github fa-beat-fade"></i></a>
+                    <a href="https://www.instagram.com/sanatanii_hindu_2001/"><i class="fa-brands fa-square-instagram fa-beat-fade"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100014788635729&mibextid=ZbWKwL "><i class="fa-brands fa-square-facebook fa-beat-fade"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2 ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Aman. Made with <i class="fa-solid fa-heart fa-beat-fade"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxE_mmmHZTnB9jL-c7pEwVVBjMYEVhPKtrCVQoIPowAgJjq_4DV5lNyTqCMdmudd0Uhhg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
